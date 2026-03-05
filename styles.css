@@ -1,57 +1,98 @@
 body {
-    font-family: instrument sans;
+    font-family: "Instrument Sans", sans-serif;
     margin: 0;
-    color: black;
+    color: #2a2a2a;
     background-color: #a2c11c;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
+/* Main container */
 body > * {
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
     width: 100%;
     box-sizing: border-box;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
 }
 
+/* Hero image */
 #heroimage {
-  width: 100%; 
-  display: block; 
+    width: 100%;
+    display: block;
+    border-radius: 8px;
 }
 
-h1, h2,h3 {
+/* Headings */
+h1, h2, h3 {
     text-align: center;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
+/* Main title */
+h1 {
+    background-color: #a2c11c;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1.8rem;
+}
+
+/* Paragraphs */
 p {
     text-align: center;
     padding: 0 20px;
     color: #3b1f0a;
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
+/* Menu list */
 ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 20px 0;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 1.1rem;
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 6px;
 }
 
+/* Button */
 .button {
     background-color: #a2c11c;
     padding: 15px;
-    margin: 20px auto;
+    margin: 25px auto;
     width: 80%;
     display: block;
     text-align: center;
     font-weight: bold;
     color: black;
     text-decoration: none;
+    border-radius: 8px;
+    transition: 0.2s ease;
 }
 
+/* Button hover effect */
+.button:hover {
+    background-color: #8fae16;
+    transform: translateY(-2px);
+}
+
+/* Address box */
+.address {
+    background: #e5e5e5;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
